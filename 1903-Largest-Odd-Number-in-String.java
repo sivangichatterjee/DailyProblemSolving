@@ -24,10 +24,9 @@ class Solution {
             x=Character.getNumericValue(num.charAt(i));
             if(x%2!=0)
             {
-                str=num.substring(0,i+1);
-                break;
+                return num.substring(0,i+1);           
             }        
         }
-        return str;
+        return "";
     }
 }
